@@ -1,0 +1,624 @@
+{
+  "por_clase": {
+    "aedes": {
+      "train": 177,
+      "val": 100,
+      "test": 125
+    },
+    "anopheles": {
+      "train": 370,
+      "val": 125,
+      "test": 144
+    },
+    "apple_apple_scab": {
+      "train": 442,
+      "val": 94,
+      "test": 94
+    },
+    "apple_black_rot": {
+      "train": 435,
+      "val": 93,
+      "test": 93
+    },
+    "apple_cedar_apple_rust": {
+      "train": 193,
+      "val": 41,
+      "test": 41
+    },
+    "apple_healthy": {
+      "train": 493,
+      "val": 107,
+      "test": 247
+    },
+    "bear": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "bee": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "beetle": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "blueberry_healthy": {
+      "train": 494,
+      "val": 106,
+      "test": 225
+    },
+    "buildings": {
+      "train": 510,
+      "val": 90,
+      "test": 437
+    },
+    "butterfly": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "caterpillar": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "cherry_including_sour_healthy": {
+      "train": 494,
+      "val": 106,
+      "test": 128
+    },
+    "cherry_including_sour_powdery_mildew": {
+      "train": 494,
+      "val": 106,
+      "test": 158
+    },
+    "cockroach": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "corn_maize_cercospora_leaf_spot_gray_leaf_spot": {
+      "train": 359,
+      "val": 77,
+      "test": 77
+    },
+    "corn_maize_common_rust": {
+      "train": 494,
+      "val": 106,
+      "test": 179
+    },
+    "corn_maize_healthy": {
+      "train": 494,
+      "val": 106,
+      "test": 174
+    },
+    "corn_maize_northern_leaf_blight": {
+      "train": 494,
+      "val": 106,
+      "test": 148
+    },
+    "culex": {
+      "train": 0,
+      "val": 1,
+      "test": 39
+    },
+    "dinosaur": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "dolphin": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "forest": {
+      "train": 510,
+      "val": 90,
+      "test": 574
+    },
+    "fox": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "glacier": {
+      "train": 510,
+      "val": 90,
+      "test": 553
+    },
+    "grape_black_rot": {
+      "train": 494,
+      "val": 106,
+      "test": 177
+    },
+    "grape_esca_black_measles": {
+      "train": 494,
+      "val": 106,
+      "test": 207
+    },
+    "grape_healthy": {
+      "train": 297,
+      "val": 63,
+      "test": 63
+    },
+    "grape_leaf_blight_isariopsis_leaf_spot": {
+      "train": 494,
+      "val": 106,
+      "test": 161
+    },
+    "leopard": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "lion": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "mountain": {
+      "train": 510,
+      "val": 90,
+      "test": 625
+    },
+    "mouse": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "orange_haunglongbing_citrus_greening": {
+      "train": 494,
+      "val": 106,
+      "test": 826
+    },
+    "peach_bacterial_spot": {
+      "train": 494,
+      "val": 106,
+      "test": 345
+    },
+    "peach_healthy": {
+      "train": 252,
+      "val": 54,
+      "test": 54
+    },
+    "pepper_bell_bacterial_spot": {
+      "train": 494,
+      "val": 106,
+      "test": 150
+    },
+    "pepper_bell_healthy": {
+      "train": 494,
+      "val": 106,
+      "test": 222
+    },
+    "person": {
+      "train": 510,
+      "val": 90,
+      "test": 499
+    },
+    "plain": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "potato_early_blight": {
+      "train": 494,
+      "val": 106,
+      "test": 150
+    },
+    "potato_healthy": {
+      "train": 106,
+      "val": 23,
+      "test": 23
+    },
+    "potato_late_blight": {
+      "train": 494,
+      "val": 106,
+      "test": 150
+    },
+    "rabbit": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "raspberry_healthy": {
+      "train": 259,
+      "val": 56,
+      "test": 56
+    },
+    "sea": {
+      "train": 510,
+      "val": 90,
+      "test": 610
+    },
+    "shark": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "soybean_healthy": {
+      "train": 494,
+      "val": 106,
+      "test": 496
+    },
+    "squash_powdery_mildew": {
+      "train": 494,
+      "val": 106,
+      "test": 275
+    },
+    "squirrel": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "strawberry_healthy": {
+      "train": 320,
+      "val": 68,
+      "test": 68
+    },
+    "strawberry_leaf_scorch": {
+      "train": 494,
+      "val": 106,
+      "test": 166
+    },
+    "street": {
+      "train": 510,
+      "val": 90,
+      "test": 501
+    },
+    "tiger": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "tomato_bacterial_spot": {
+      "train": 494,
+      "val": 106,
+      "test": 319
+    },
+    "tomato_early_blight": {
+      "train": 494,
+      "val": 106,
+      "test": 150
+    },
+    "tomato_healthy": {
+      "train": 494,
+      "val": 106,
+      "test": 238
+    },
+    "tomato_late_blight": {
+      "train": 494,
+      "val": 106,
+      "test": 211
+    },
+    "tomato_leaf_mold": {
+      "train": 320,
+      "val": 68,
+      "test": 68
+    },
+    "tomato_septoria_leaf_spot": {
+      "train": 494,
+      "val": 106,
+      "test": 146
+    },
+    "tomato_spider_mites_two_spotted_spider_mite": {
+      "train": 494,
+      "val": 106,
+      "test": 169
+    },
+    "tomato_target_spot": {
+      "train": 494,
+      "val": 106,
+      "test": 152
+    },
+    "tomato_tomato_mosaic_virus": {
+      "train": 115,
+      "val": 25,
+      "test": 25
+    },
+    "tomato_tomato_yellow_leaf_curl_virus": {
+      "train": 494,
+      "val": 106,
+      "test": 623
+    },
+    "trout": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    },
+    "wolf": {
+      "train": 425,
+      "val": 75,
+      "test": 100
+    }
+  },
+  "total_por_clase": {
+    "aedes": 402,
+    "anopheles": 639,
+    "apple_apple_scab": 630,
+    "apple_black_rot": 621,
+    "apple_cedar_apple_rust": 275,
+    "apple_healthy": 847,
+    "bear": 600,
+    "bee": 600,
+    "beetle": 600,
+    "blueberry_healthy": 825,
+    "buildings": 1037,
+    "butterfly": 600,
+    "caterpillar": 600,
+    "cherry_including_sour_healthy": 728,
+    "cherry_including_sour_powdery_mildew": 758,
+    "cockroach": 600,
+    "corn_maize_cercospora_leaf_spot_gray_leaf_spot": 513,
+    "corn_maize_common_rust": 779,
+    "corn_maize_healthy": 774,
+    "corn_maize_northern_leaf_blight": 748,
+    "culex": 40,
+    "dinosaur": 600,
+    "dolphin": 600,
+    "forest": 1174,
+    "fox": 600,
+    "glacier": 1153,
+    "grape_black_rot": 777,
+    "grape_esca_black_measles": 807,
+    "grape_healthy": 423,
+    "grape_leaf_blight_isariopsis_leaf_spot": 761,
+    "leopard": 600,
+    "lion": 600,
+    "mountain": 1225,
+    "mouse": 600,
+    "orange_haunglongbing_citrus_greening": 1426,
+    "peach_bacterial_spot": 945,
+    "peach_healthy": 360,
+    "pepper_bell_bacterial_spot": 750,
+    "pepper_bell_healthy": 822,
+    "person": 1099,
+    "plain": 600,
+    "potato_early_blight": 750,
+    "potato_healthy": 152,
+    "potato_late_blight": 750,
+    "rabbit": 600,
+    "raspberry_healthy": 371,
+    "sea": 1210,
+    "shark": 600,
+    "soybean_healthy": 1096,
+    "squash_powdery_mildew": 875,
+    "squirrel": 600,
+    "strawberry_healthy": 456,
+    "strawberry_leaf_scorch": 766,
+    "street": 1101,
+    "tiger": 600,
+    "tomato_bacterial_spot": 919,
+    "tomato_early_blight": 750,
+    "tomato_healthy": 838,
+    "tomato_late_blight": 811,
+    "tomato_leaf_mold": 456,
+    "tomato_septoria_leaf_spot": 746,
+    "tomato_spider_mites_two_spotted_spider_mite": 769,
+    "tomato_target_spot": 752,
+    "tomato_tomato_mosaic_virus": 165,
+    "tomato_tomato_yellow_leaf_curl_virus": 1223,
+    "trout": 600,
+    "wolf": 600
+  },
+  "por_grupo": {
+    "mosquito": 3,
+    "plant_disease": 38,
+    "animal": 12,
+    "insect": 5,
+    "scene": 7,
+    "dinosaur": 1,
+    "person": 1
+  },
+  "max_per_class_train_val": 600,
+  "clases_capadas": {
+    "person": {
+      "antes_train": 2123,
+      "antes_val": 374,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "forest": {
+      "antes_train": 2353,
+      "antes_val": 416,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "mountain": {
+      "antes_train": 2555,
+      "antes_val": 450,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "sea": {
+      "antes_train": 2356,
+      "antes_val": 416,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "buildings": {
+      "antes_train": 1860,
+      "antes_val": 329,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "glacier": {
+      "antes_train": 2043,
+      "antes_val": 361,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "street": {
+      "antes_train": 2020,
+      "antes_val": 357,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "apple_healthy": {
+      "antes_train": 1144,
+      "antes_val": 247,
+      "despues_train": 493,
+      "despues_val": 107
+    },
+    "blueberry_healthy": {
+      "antes_train": 1052,
+      "antes_val": 225,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "cherry_including_sour_powdery_mildew": {
+      "antes_train": 736,
+      "antes_val": 158,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "cherry_including_sour_healthy": {
+      "antes_train": 598,
+      "antes_val": 128,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "corn_maize_common_rust": {
+      "antes_train": 834,
+      "antes_val": 179,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "corn_maize_northern_leaf_blight": {
+      "antes_train": 689,
+      "antes_val": 148,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "corn_maize_healthy": {
+      "antes_train": 814,
+      "antes_val": 174,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "grape_black_rot": {
+      "antes_train": 826,
+      "antes_val": 177,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "grape_esca_black_measles": {
+      "antes_train": 969,
+      "antes_val": 207,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "grape_leaf_blight_isariopsis_leaf_spot": {
+      "antes_train": 754,
+      "antes_val": 161,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "orange_haunglongbing_citrus_greening": {
+      "antes_train": 3855,
+      "antes_val": 826,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "peach_bacterial_spot": {
+      "antes_train": 1607,
+      "antes_val": 345,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "pepper_bell_bacterial_spot": {
+      "antes_train": 697,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "pepper_bell_healthy": {
+      "antes_train": 1034,
+      "antes_val": 222,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "potato_early_blight": {
+      "antes_train": 700,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "potato_late_blight": {
+      "antes_train": 700,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "soybean_healthy": {
+      "antes_train": 2317,
+      "antes_val": 496,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "squash_powdery_mildew": {
+      "antes_train": 1285,
+      "antes_val": 275,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "strawberry_leaf_scorch": {
+      "antes_train": 777,
+      "antes_val": 166,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_bacterial_spot": {
+      "antes_train": 1489,
+      "antes_val": 319,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_early_blight": {
+      "antes_train": 700,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_late_blight": {
+      "antes_train": 979,
+      "antes_val": 210,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_septoria_leaf_spot": {
+      "antes_train": 678,
+      "antes_val": 146,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_spider_mites_two_spotted_spider_mite": {
+      "antes_train": 788,
+      "antes_val": 169,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_target_spot": {
+      "antes_train": 708,
+      "antes_val": 152,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_tomato_yellow_leaf_curl_virus": {
+      "antes_train": 2908,
+      "antes_val": 623,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_healthy": {
+      "antes_train": 1109,
+      "antes_val": 238,
+      "despues_train": 494,
+      "despues_val": 106
+    }
+  }
+}

@@ -1,0 +1,1714 @@
+{
+  "reused": false,
+  "img_size_entrenamiento": 128,
+  "seed": 42,
+  "raw_counts": {
+    "cifar100": 16200,
+    "intel": 17034,
+    "plantvillage": 48370,
+    "mosqvision": 3000
+  },
+  "seg_pred_intel_excluidas_sin_etiqueta": 7301,
+  "validas": 84604,
+  "corruptas": 0,
+  "corruptos_detalle": [],
+  "duplicados_eliminados": 1959,
+  "duplicados_detalle": [
+    {
+      "path": "data\\extracted\\cifar100\\images\\test\\girl\\00044.png",
+      "source": "cifar100",
+      "unified_label": "person",
+      "split": "test",
+      "duplicate_of": "data\\extracted\\cifar100\\images\\test\\baby\\00069.png"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0186.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0242.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0283.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0230.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0312.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0002.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0331.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0178.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0335.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0057.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0356.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0054.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0360.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0067.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0437.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0222.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0494.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0326.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0528.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0415.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0539.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0397.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0587.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0415.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0590.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0468.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0607.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0067.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0751.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0175.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0771.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0057.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0798.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0793.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0824.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0791.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0849.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0467.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0865.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0777.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0878.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0300.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0923.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0366.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0929.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0703.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0950.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0484.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0164.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0075.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0350.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0008.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0459.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0087.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0669.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0503.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0897.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0248.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0912.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0731.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0086.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0007.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0087.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0011.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0142.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0080.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0151.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0051.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0159.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0028.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0188.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0073.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0199.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0007.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0201.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0051.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0217.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0023.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0222.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0223.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0028.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0228.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0174.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0234.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0210.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0237.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0210.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0238.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0060.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0241.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0013.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0249.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0124.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0252.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0092.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0265.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0083.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0275.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0028.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0277.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0210.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0283.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0011.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0285.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0083.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0290.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0118.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0337.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0183.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0367.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0295.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0374.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0295.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0384.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0385.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0118.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0386.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0092.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0389.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0007.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0390.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0295.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0391.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0011.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0392.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0210.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0405.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0092.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0414.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0364.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0425.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0364.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0445.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0118.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0464.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0295.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0471.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0183.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0472.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0048.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0474.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0048.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0475.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0369.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0481.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0268.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0489.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0094.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0499.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0080.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0501.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0007.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0519.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0505.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0534.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0037.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0536.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0037.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0538.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0369.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0548.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0124.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0552.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0483.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0563.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0319.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0567.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0571.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0174.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0573.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0350.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0574.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0350.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0593.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0094.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0634.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0094.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0650.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0092.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0682.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0210.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0686.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0051.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0687.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0118.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0703.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0295.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0706.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0083.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0717.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0319.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0725.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0094.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0738.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0350.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0740.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0118.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0743.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0628.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0746.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0748.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0037.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0752.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0092.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0757.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0156.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0760.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0570.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0771.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0320.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0773.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0295.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0789.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0028.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0790.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0797.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0358.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0805.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0156.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0810.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0007.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0816.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0028.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0820.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0054.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0822.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0295.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0825.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0676.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0836.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0268.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0841.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0845.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0570.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0852.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0073.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0859.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0048.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0860.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0183.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0862.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0028.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0871.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0083.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0874.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0011.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0875.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0174.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0878.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0645.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0882.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0505.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0893.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0183.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0902.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0083.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0908.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0676.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0914.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0054.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0923.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0051.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0934.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0350.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0948.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0505.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0955.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0060.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0956.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0025.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0966.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0118.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0991.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0268.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\CULEX\\transformed_0994.jpg",
+      "source": "mosqvision",
+      "unified_label": "culex",
+      "split": "test",
+      "duplicate_of": "dataset\\Mosquito_dataset\\CULEX\\transformed_0013.jpg"
+    },
+    {
+      "path": "dataset\\Plantas\\raw\\color\\Tomato___healthy\\a5de43e7-fc2f-4a14-a8e6-c0f2f94c84f1___GH_HL Leaf 434.JPG",
+      "source": "plantvillage",
+      "unified_label": "tomato_healthy",
+      "split": "test",
+      "duplicate_of": "dataset\\Plantas\\raw\\color\\Tomato___healthy\\488feb1c-4b9f-44e7-8aa6-4103a9601f5f___GH_HL Leaf 434.JPG"
+    },
+    {
+      "path": "data\\extracted\\cifar100\\images\\train\\girl\\00253.png",
+      "source": "cifar100",
+      "unified_label": "person",
+      "split": "val",
+      "duplicate_of": "data\\extracted\\cifar100\\images\\test\\baby\\00052.png"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0006.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0810.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0021.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0777.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0080.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0415.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0137.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0018.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0139.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0943.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0145.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0732.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0158.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0151.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0173.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0190.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0174.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0265.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0200.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0945.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0212.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0299.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0237.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0464.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0273.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0497.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0290.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0595.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0309.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0810.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0328.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0233.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0334.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0214.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0361.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0429.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0382.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0178.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0393.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0201.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0424.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0093.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0426.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0062.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0444.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0365.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0455.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0178.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0456.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0695.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0475.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0211.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0476.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0366.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0523.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0467.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0533.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0502.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0548.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0120.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0562.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0960.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0574.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0896.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0626.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0921.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0629.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0791.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0638.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0793.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0640.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0733.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0665.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0597.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0682.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0035.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0694.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0508.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0698.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0661.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0741.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0130.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0762.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0608.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0776.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0745.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0805.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0535.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0811.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0558.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0844.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0402.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0893.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0468.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0982.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0194.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0992.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0616.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\AEDES\\transformed_0996.jpg",
+      "source": "mosqvision",
+      "unified_label": "aedes",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\AEDES\\transformed_0558.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0055.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0503.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0086.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0871.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0090.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0989.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0095.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0955.jpg"
+    },
+    {
+      "path": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0198.jpg",
+      "source": "mosqvision",
+      "unified_label": "anopheles",
+      "split": "val",
+      "duplicate_of": "dataset\\Mosquito_dataset\\ANOPHELES\\transformed_0742.jpg"
+    }
+  ],
+  "clases_capadas": {
+    "person": {
+      "antes_train": 2123,
+      "antes_val": 374,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "forest": {
+      "antes_train": 2353,
+      "antes_val": 416,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "mountain": {
+      "antes_train": 2555,
+      "antes_val": 450,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "sea": {
+      "antes_train": 2356,
+      "antes_val": 416,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "buildings": {
+      "antes_train": 1860,
+      "antes_val": 329,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "glacier": {
+      "antes_train": 2043,
+      "antes_val": 361,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "street": {
+      "antes_train": 2020,
+      "antes_val": 357,
+      "despues_train": 510,
+      "despues_val": 90
+    },
+    "apple_healthy": {
+      "antes_train": 1144,
+      "antes_val": 247,
+      "despues_train": 493,
+      "despues_val": 107
+    },
+    "blueberry_healthy": {
+      "antes_train": 1052,
+      "antes_val": 225,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "cherry_including_sour_powdery_mildew": {
+      "antes_train": 736,
+      "antes_val": 158,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "cherry_including_sour_healthy": {
+      "antes_train": 598,
+      "antes_val": 128,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "corn_maize_common_rust": {
+      "antes_train": 834,
+      "antes_val": 179,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "corn_maize_northern_leaf_blight": {
+      "antes_train": 689,
+      "antes_val": 148,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "corn_maize_healthy": {
+      "antes_train": 814,
+      "antes_val": 174,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "grape_black_rot": {
+      "antes_train": 826,
+      "antes_val": 177,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "grape_esca_black_measles": {
+      "antes_train": 969,
+      "antes_val": 207,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "grape_leaf_blight_isariopsis_leaf_spot": {
+      "antes_train": 754,
+      "antes_val": 161,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "orange_haunglongbing_citrus_greening": {
+      "antes_train": 3855,
+      "antes_val": 826,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "peach_bacterial_spot": {
+      "antes_train": 1607,
+      "antes_val": 345,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "pepper_bell_bacterial_spot": {
+      "antes_train": 697,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "pepper_bell_healthy": {
+      "antes_train": 1034,
+      "antes_val": 222,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "potato_early_blight": {
+      "antes_train": 700,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "potato_late_blight": {
+      "antes_train": 700,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "soybean_healthy": {
+      "antes_train": 2317,
+      "antes_val": 496,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "squash_powdery_mildew": {
+      "antes_train": 1285,
+      "antes_val": 275,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "strawberry_leaf_scorch": {
+      "antes_train": 777,
+      "antes_val": 166,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_bacterial_spot": {
+      "antes_train": 1489,
+      "antes_val": 319,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_early_blight": {
+      "antes_train": 700,
+      "antes_val": 150,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_late_blight": {
+      "antes_train": 979,
+      "antes_val": 210,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_septoria_leaf_spot": {
+      "antes_train": 678,
+      "antes_val": 146,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_spider_mites_two_spotted_spider_mite": {
+      "antes_train": 788,
+      "antes_val": 169,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_target_spot": {
+      "antes_train": 708,
+      "antes_val": 152,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_tomato_yellow_leaf_curl_virus": {
+      "antes_train": 2908,
+      "antes_val": 623,
+      "despues_train": 494,
+      "despues_val": 106
+    },
+    "tomato_healthy": {
+      "antes_train": 1109,
+      "antes_val": 238,
+      "despues_train": 494,
+      "despues_val": 106
+    }
+  },
+  "max_per_class_train_val": 600,
+  "final_counts": {
+    "test": 13261,
+    "val": 5806,
+    "train": 28627
+  },
+  "final_por_fuente_y_split": {
+    "cifar100|test": 2699,
+    "mosqvision|test": 308,
+    "intel|test": 3000,
+    "plantvillage|test": 7254,
+    "cifar100|val": 1568,
+    "mosqvision|val": 226,
+    "intel|val": 487,
+    "plantvillage|val": 3525,
+    "cifar100|train": 8852,
+    "mosqvision|train": 547,
+    "intel|train": 2793,
+    "plantvillage|train": 16435
+  },
+  "num_clases": 67,
+  "class_names": [
+    "aedes",
+    "anopheles",
+    "apple_apple_scab",
+    "apple_black_rot",
+    "apple_cedar_apple_rust",
+    "apple_healthy",
+    "bear",
+    "bee",
+    "beetle",
+    "blueberry_healthy",
+    "buildings",
+    "butterfly",
+    "caterpillar",
+    "cherry_including_sour_healthy",
+    "cherry_including_sour_powdery_mildew",
+    "cockroach",
+    "corn_maize_cercospora_leaf_spot_gray_leaf_spot",
+    "corn_maize_common_rust",
+    "corn_maize_healthy",
+    "corn_maize_northern_leaf_blight",
+    "culex",
+    "dinosaur",
+    "dolphin",
+    "forest",
+    "fox",
+    "glacier",
+    "grape_black_rot",
+    "grape_esca_black_measles",
+    "grape_healthy",
+    "grape_leaf_blight_isariopsis_leaf_spot",
+    "leopard",
+    "lion",
+    "mountain",
+    "mouse",
+    "orange_haunglongbing_citrus_greening",
+    "peach_bacterial_spot",
+    "peach_healthy",
+    "pepper_bell_bacterial_spot",
+    "pepper_bell_healthy",
+    "person",
+    "plain",
+    "potato_early_blight",
+    "potato_healthy",
+    "potato_late_blight",
+    "rabbit",
+    "raspberry_healthy",
+    "sea",
+    "shark",
+    "soybean_healthy",
+    "squash_powdery_mildew",
+    "squirrel",
+    "strawberry_healthy",
+    "strawberry_leaf_scorch",
+    "street",
+    "tiger",
+    "tomato_bacterial_spot",
+    "tomato_early_blight",
+    "tomato_healthy",
+    "tomato_late_blight",
+    "tomato_leaf_mold",
+    "tomato_septoria_leaf_spot",
+    "tomato_spider_mites_two_spotted_spider_mite",
+    "tomato_target_spot",
+    "tomato_tomato_mosaic_virus",
+    "tomato_tomato_yellow_leaf_curl_virus",
+    "trout",
+    "wolf"
+  ]
+}

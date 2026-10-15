@@ -1,0 +1,15 @@
+# OmniVision AI - dependencias verificadas para Python 3.10-3.12 (Windows CPU y WSL2 GPU)
+tensorflow==2.21.0
+streamlit>=1.40
+numpy>=1.26
+pandas>=2.0
+pyarrow>=15
+matplotlib>=3.8
+scikit-learn>=1.4
+pillow>=10.0
+jupyter>=1.0
+nbconvert>=7.16
+ipykernel>=6.29
+pytest>=8.0
+huggingface_hub>=0.27
+tqdm>=4.66

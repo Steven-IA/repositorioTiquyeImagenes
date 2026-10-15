@@ -1,0 +1,26 @@
+{
+  "model": "models\\omnivision_cnn.keras",
+  "num_classes": 67,
+  "img_size": 128,
+  "batch_size": 64,
+  "seed": 42,
+  "device": "CPU (sin GPU disponible en Windows nativo)",
+  "train_images": 28627,
+  "val_images": 5806,
+  "phase1": {
+    "best_val_accuracy": 0.8648,
+    "epochs_run": 15,
+    "seconds": 1272.7
+  },
+  "phase2": {
+    "best_val_accuracy": 0.8839,
+    "epochs_run": 8,
+    "seconds": 821.6
+  },
+  "best_phase": {
+    "val_accuracy": 0.8839,
+    "phase": 2
+  },
+  "tf_version": "2.21.0",
+  "finished_at": "2026-10-15 01:00:54"
+}

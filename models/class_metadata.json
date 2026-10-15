@@ -1,0 +1,1389 @@
+{
+  "img_size": 128,
+  "seed": 42,
+  "num_classes": 67,
+  "equivalencias_justificadas": [
+    "forest/mountain/sea: CIFAR-100 y Intel describen la misma categoría semántica (bosque, montaña, mar).",
+    "person: baby/boy/girl/man/woman de CIFAR-100 se agrupan en la categoría general 'person' por baja resolución (32x32) y por coincidir con el grupo semántico requerido.",
+    "road (CIFAR) y street (Intel) NO se fusionan: son etiquetas distintas en sus datasets de origen.",
+    "plain (CIFAR) se mantiene separada de glacier (Intel): llanura y glaciar no son equivalentes.",
+    "PlantVillage conserva la relación especie-enfermedad completa; no se fusionan ni se inventan enfermedades.",
+    "Mosquitos conservan su identificación taxonómica (Aedes, Anopheles, Culex)."
+  ],
+  "classes": {
+    "aedes": {
+      "index": 0,
+      "label": "aedes",
+      "name_es": "Mosquito (Aedes)",
+      "group": "mosquito",
+      "sources": {
+        "mosqvision": [
+          "AEDES"
+        ]
+      },
+      "counts": {
+        "train": 177,
+        "val": 100,
+        "test": 125
+      },
+      "species": [
+        "Aedes"
+      ]
+    },
+    "anopheles": {
+      "index": 1,
+      "label": "anopheles",
+      "name_es": "Mosquito (Anopheles)",
+      "group": "mosquito",
+      "sources": {
+        "mosqvision": [
+          "ANOPHELES"
+        ]
+      },
+      "counts": {
+        "train": 370,
+        "val": 125,
+        "test": 144
+      },
+      "species": [
+        "Anopheles"
+      ]
+    },
+    "apple_apple_scab": {
+      "index": 2,
+      "label": "apple_apple_scab",
+      "name_es": "Manzano — sarna del manzano",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Apple___Apple_scab"
+        ]
+      },
+      "counts": {
+        "train": 442,
+        "val": 94,
+        "test": 94
+      },
+      "species": [
+        "Apple"
+      ],
+      "health_status": [
+        "Apple scab"
+      ]
+    },
+    "apple_black_rot": {
+      "index": 3,
+      "label": "apple_black_rot",
+      "name_es": "Manzano — podredumbre negra",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Apple___Black_rot"
+        ]
+      },
+      "counts": {
+        "train": 435,
+        "val": 93,
+        "test": 93
+      },
+      "species": [
+        "Apple"
+      ],
+      "health_status": [
+        "Black rot"
+      ]
+    },
+    "apple_cedar_apple_rust": {
+      "index": 4,
+      "label": "apple_cedar_apple_rust",
+      "name_es": "Manzano — roya del cedro y del manzano",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Apple___Cedar_apple_rust"
+        ]
+      },
+      "counts": {
+        "train": 193,
+        "val": 41,
+        "test": 41
+      },
+      "species": [
+        "Apple"
+      ],
+      "health_status": [
+        "Cedar apple rust"
+      ]
+    },
+    "apple_healthy": {
+      "index": 5,
+      "label": "apple_healthy",
+      "name_es": "Manzano — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Apple___healthy"
+        ]
+      },
+      "counts": {
+        "train": 493,
+        "val": 107,
+        "test": 247
+      },
+      "species": [
+        "Apple"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "bear": {
+      "index": 6,
+      "label": "bear",
+      "name_es": "Oso",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "bear"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "bee": {
+      "index": 7,
+      "label": "bee",
+      "name_es": "Abeja",
+      "group": "insect",
+      "sources": {
+        "cifar100": [
+          "bee"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "beetle": {
+      "index": 8,
+      "label": "beetle",
+      "name_es": "Escarabajo",
+      "group": "insect",
+      "sources": {
+        "cifar100": [
+          "beetle"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "blueberry_healthy": {
+      "index": 9,
+      "label": "blueberry_healthy",
+      "name_es": "Arándano — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Blueberry___healthy"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 225
+      },
+      "species": [
+        "Blueberry"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "buildings": {
+      "index": 10,
+      "label": "buildings",
+      "name_es": "Edificios",
+      "group": "scene",
+      "sources": {
+        "intel": [
+          "buildings"
+        ]
+      },
+      "counts": {
+        "train": 510,
+        "val": 90,
+        "test": 437
+      }
+    },
+    "butterfly": {
+      "index": 11,
+      "label": "butterfly",
+      "name_es": "Mariposa",
+      "group": "insect",
+      "sources": {
+        "cifar100": [
+          "butterfly"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "caterpillar": {
+      "index": 12,
+      "label": "caterpillar",
+      "name_es": "Oruga",
+      "group": "insect",
+      "sources": {
+        "cifar100": [
+          "caterpillar"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "cherry_including_sour_healthy": {
+      "index": 13,
+      "label": "cherry_including_sour_healthy",
+      "name_es": "Cerezo — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Cherry_(including_sour)___healthy"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 128
+      },
+      "species": [
+        "Cherry_(including_sour)"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "cherry_including_sour_powdery_mildew": {
+      "index": 14,
+      "label": "cherry_including_sour_powdery_mildew",
+      "name_es": "Cerezo — mildiu polvoso",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Cherry_(including_sour)___Powdery_mildew"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 158
+      },
+      "species": [
+        "Cherry_(including_sour)"
+      ],
+      "health_status": [
+        "Powdery mildew"
+      ]
+    },
+    "cockroach": {
+      "index": 15,
+      "label": "cockroach",
+      "name_es": "Cucaracha",
+      "group": "insect",
+      "sources": {
+        "cifar100": [
+          "cockroach"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "corn_maize_cercospora_leaf_spot_gray_leaf_spot": {
+      "index": 16,
+      "label": "corn_maize_cercospora_leaf_spot_gray_leaf_spot",
+      "name_es": "Maíz — mancha por Cercospora (mancha gris)",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot"
+        ]
+      },
+      "counts": {
+        "train": 359,
+        "val": 77,
+        "test": 77
+      },
+      "species": [
+        "Corn_(maize)"
+      ],
+      "health_status": [
+        "Cercospora leaf spot Gray leaf spot"
+      ]
+    },
+    "corn_maize_common_rust": {
+      "index": 17,
+      "label": "corn_maize_common_rust",
+      "name_es": "Maíz — roya común",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Corn_(maize)___Common_rust_"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 179
+      },
+      "species": [
+        "Corn_(maize)"
+      ],
+      "health_status": [
+        "Common rust"
+      ]
+    },
+    "corn_maize_healthy": {
+      "index": 18,
+      "label": "corn_maize_healthy",
+      "name_es": "Maíz — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Corn_(maize)___healthy"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 174
+      },
+      "species": [
+        "Corn_(maize)"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "corn_maize_northern_leaf_blight": {
+      "index": 19,
+      "label": "corn_maize_northern_leaf_blight",
+      "name_es": "Maíz — tizón foliar del norte",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Corn_(maize)___Northern_Leaf_Blight"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 148
+      },
+      "species": [
+        "Corn_(maize)"
+      ],
+      "health_status": [
+        "Northern Leaf Blight"
+      ]
+    },
+    "culex": {
+      "index": 20,
+      "label": "culex",
+      "name_es": "Mosquito (Culex)",
+      "group": "mosquito",
+      "sources": {
+        "mosqvision": [
+          "CULEX"
+        ]
+      },
+      "counts": {
+        "train": 0,
+        "val": 1,
+        "test": 39
+      },
+      "species": [
+        "Culex"
+      ]
+    },
+    "dinosaur": {
+      "index": 21,
+      "label": "dinosaur",
+      "name_es": "Dinosaurio",
+      "group": "dinosaur",
+      "sources": {
+        "cifar100": [
+          "dinosaur"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "dolphin": {
+      "index": 22,
+      "label": "dolphin",
+      "name_es": "Delfín",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "dolphin"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "forest": {
+      "index": 23,
+      "label": "forest",
+      "name_es": "Bosque",
+      "group": "scene",
+      "sources": {
+        "cifar100": [
+          "forest"
+        ],
+        "intel": [
+          "forest"
+        ]
+      },
+      "counts": {
+        "train": 510,
+        "val": 90,
+        "test": 574
+      }
+    },
+    "fox": {
+      "index": 24,
+      "label": "fox",
+      "name_es": "Zorro",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "fox"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "glacier": {
+      "index": 25,
+      "label": "glacier",
+      "name_es": "Glaciar",
+      "group": "scene",
+      "sources": {
+        "intel": [
+          "glacier"
+        ]
+      },
+      "counts": {
+        "train": 510,
+        "val": 90,
+        "test": 553
+      }
+    },
+    "grape_black_rot": {
+      "index": 26,
+      "label": "grape_black_rot",
+      "name_es": "Vid — podredumbre negra",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Grape___Black_rot"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 177
+      },
+      "species": [
+        "Grape"
+      ],
+      "health_status": [
+        "Black rot"
+      ]
+    },
+    "grape_esca_black_measles": {
+      "index": 27,
+      "label": "grape_esca_black_measles",
+      "name_es": "Vid — esca (negras)",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Grape___Esca_(Black_Measles)"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 207
+      },
+      "species": [
+        "Grape"
+      ],
+      "health_status": [
+        "Esca (Black Measles)"
+      ]
+    },
+    "grape_healthy": {
+      "index": 28,
+      "label": "grape_healthy",
+      "name_es": "Vid — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Grape___healthy"
+        ]
+      },
+      "counts": {
+        "train": 297,
+        "val": 63,
+        "test": 63
+      },
+      "species": [
+        "Grape"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "grape_leaf_blight_isariopsis_leaf_spot": {
+      "index": 29,
+      "label": "grape_leaf_blight_isariopsis_leaf_spot",
+      "name_es": "Vid — tizón foliar (Isariopsis)",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 161
+      },
+      "species": [
+        "Grape"
+      ],
+      "health_status": [
+        "Leaf blight (Isariopsis Leaf Spot)"
+      ]
+    },
+    "leopard": {
+      "index": 30,
+      "label": "leopard",
+      "name_es": "Leopardo",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "leopard"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "lion": {
+      "index": 31,
+      "label": "lion",
+      "name_es": "León",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "lion"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "mountain": {
+      "index": 32,
+      "label": "mountain",
+      "name_es": "Montaña",
+      "group": "scene",
+      "sources": {
+        "cifar100": [
+          "mountain"
+        ],
+        "intel": [
+          "mountain"
+        ]
+      },
+      "counts": {
+        "train": 510,
+        "val": 90,
+        "test": 625
+      }
+    },
+    "mouse": {
+      "index": 33,
+      "label": "mouse",
+      "name_es": "Ratón",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "mouse"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "orange_haunglongbing_citrus_greening": {
+      "index": 34,
+      "label": "orange_haunglongbing_citrus_greening",
+      "name_es": "orange haunglongbing citrus greening",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Orange___Haunglongbing_(Citrus_greening)"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 826
+      },
+      "species": [
+        "Orange"
+      ],
+      "health_status": [
+        "Haunglongbing (Citrus greening)"
+      ]
+    },
+    "peach_bacterial_spot": {
+      "index": 35,
+      "label": "peach_bacterial_spot",
+      "name_es": "Durazno — mancha bacteriana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Peach___Bacterial_spot"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 345
+      },
+      "species": [
+        "Peach"
+      ],
+      "health_status": [
+        "Bacterial spot"
+      ]
+    },
+    "peach_healthy": {
+      "index": 36,
+      "label": "peach_healthy",
+      "name_es": "Durazno — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Peach___healthy"
+        ]
+      },
+      "counts": {
+        "train": 252,
+        "val": 54,
+        "test": 54
+      },
+      "species": [
+        "Peach"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "pepper_bell_bacterial_spot": {
+      "index": 37,
+      "label": "pepper_bell_bacterial_spot",
+      "name_es": "Pimiento — mancha bacteriana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Pepper,_bell___Bacterial_spot"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 150
+      },
+      "species": [
+        "Pepper,_bell"
+      ],
+      "health_status": [
+        "Bacterial spot"
+      ]
+    },
+    "pepper_bell_healthy": {
+      "index": 38,
+      "label": "pepper_bell_healthy",
+      "name_es": "Pimiento — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Pepper,_bell___healthy"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 222
+      },
+      "species": [
+        "Pepper,_bell"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "person": {
+      "index": 39,
+      "label": "person",
+      "name_es": "Persona",
+      "group": "person",
+      "sources": {
+        "cifar100": [
+          "baby",
+          "boy",
+          "girl",
+          "man",
+          "woman"
+        ]
+      },
+      "counts": {
+        "train": 510,
+        "val": 90,
+        "test": 499
+      }
+    },
+    "plain": {
+      "index": 40,
+      "label": "plain",
+      "name_es": "Llanura",
+      "group": "scene",
+      "sources": {
+        "cifar100": [
+          "plain"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "potato_early_blight": {
+      "index": 41,
+      "label": "potato_early_blight",
+      "name_es": "Patata — tizón temprano",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Potato___Early_blight"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 150
+      },
+      "species": [
+        "Potato"
+      ],
+      "health_status": [
+        "Early blight"
+      ]
+    },
+    "potato_healthy": {
+      "index": 42,
+      "label": "potato_healthy",
+      "name_es": "Patata — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Potato___healthy"
+        ]
+      },
+      "counts": {
+        "train": 106,
+        "val": 23,
+        "test": 23
+      },
+      "species": [
+        "Potato"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "potato_late_blight": {
+      "index": 43,
+      "label": "potato_late_blight",
+      "name_es": "Patata — tizón tardío",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Potato___Late_blight"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 150
+      },
+      "species": [
+        "Potato"
+      ],
+      "health_status": [
+        "Late blight"
+      ]
+    },
+    "rabbit": {
+      "index": 44,
+      "label": "rabbit",
+      "name_es": "Conejo",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "rabbit"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "raspberry_healthy": {
+      "index": 45,
+      "label": "raspberry_healthy",
+      "name_es": "Frambuesa — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Raspberry___healthy"
+        ]
+      },
+      "counts": {
+        "train": 259,
+        "val": 56,
+        "test": 56
+      },
+      "species": [
+        "Raspberry"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "sea": {
+      "index": 46,
+      "label": "sea",
+      "name_es": "Mar",
+      "group": "scene",
+      "sources": {
+        "cifar100": [
+          "sea"
+        ],
+        "intel": [
+          "sea"
+        ]
+      },
+      "counts": {
+        "train": 510,
+        "val": 90,
+        "test": 610
+      }
+    },
+    "shark": {
+      "index": 47,
+      "label": "shark",
+      "name_es": "Tiburón",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "shark"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "soybean_healthy": {
+      "index": 48,
+      "label": "soybean_healthy",
+      "name_es": "Soja — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Soybean___healthy"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 496
+      },
+      "species": [
+        "Soybean"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "squash_powdery_mildew": {
+      "index": 49,
+      "label": "squash_powdery_mildew",
+      "name_es": "Calabaza — mildiu polvoso",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Squash___Powdery_mildew"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 275
+      },
+      "species": [
+        "Squash"
+      ],
+      "health_status": [
+        "Powdery mildew"
+      ]
+    },
+    "squirrel": {
+      "index": 50,
+      "label": "squirrel",
+      "name_es": "Ardilla",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "squirrel"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "strawberry_healthy": {
+      "index": 51,
+      "label": "strawberry_healthy",
+      "name_es": "Fresa — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Strawberry___healthy"
+        ]
+      },
+      "counts": {
+        "train": 320,
+        "val": 68,
+        "test": 68
+      },
+      "species": [
+        "Strawberry"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "strawberry_leaf_scorch": {
+      "index": 52,
+      "label": "strawberry_leaf_scorch",
+      "name_es": "Fresa — quemadura foliar",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Strawberry___Leaf_scorch"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 166
+      },
+      "species": [
+        "Strawberry"
+      ],
+      "health_status": [
+        "Leaf scorch"
+      ]
+    },
+    "street": {
+      "index": 53,
+      "label": "street",
+      "name_es": "Calle",
+      "group": "scene",
+      "sources": {
+        "intel": [
+          "street"
+        ]
+      },
+      "counts": {
+        "train": 510,
+        "val": 90,
+        "test": 501
+      }
+    },
+    "tiger": {
+      "index": 54,
+      "label": "tiger",
+      "name_es": "Tigre",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "tiger"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "tomato_bacterial_spot": {
+      "index": 55,
+      "label": "tomato_bacterial_spot",
+      "name_es": "Tomate — mancha bacteriana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Bacterial_spot"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 319
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Bacterial spot"
+      ]
+    },
+    "tomato_early_blight": {
+      "index": 56,
+      "label": "tomato_early_blight",
+      "name_es": "Tomate — tizón temprano",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Early_blight"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 150
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Early blight"
+      ]
+    },
+    "tomato_healthy": {
+      "index": 57,
+      "label": "tomato_healthy",
+      "name_es": "Tomate — hoja sana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___healthy"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 238
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "healthy"
+      ]
+    },
+    "tomato_late_blight": {
+      "index": 58,
+      "label": "tomato_late_blight",
+      "name_es": "Tomate — tizón tardío",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Late_blight"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 211
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Late blight"
+      ]
+    },
+    "tomato_leaf_mold": {
+      "index": 59,
+      "label": "tomato_leaf_mold",
+      "name_es": "Tomate — moho foliar",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Leaf_Mold"
+        ]
+      },
+      "counts": {
+        "train": 320,
+        "val": 68,
+        "test": 68
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Leaf Mold"
+      ]
+    },
+    "tomato_septoria_leaf_spot": {
+      "index": 60,
+      "label": "tomato_septoria_leaf_spot",
+      "name_es": "Tomate — mancha por Septoria",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Septoria_leaf_spot"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 146
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Septoria leaf spot"
+      ]
+    },
+    "tomato_spider_mites_two_spotted_spider_mite": {
+      "index": 61,
+      "label": "tomato_spider_mites_two_spotted_spider_mite",
+      "name_es": "Tomate — ácaros (araña roja)",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Spider_mites Two-spotted_spider_mite"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 169
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Spider mites Two-spotted spider mite"
+      ]
+    },
+    "tomato_target_spot": {
+      "index": 62,
+      "label": "tomato_target_spot",
+      "name_es": "Tomate — mancha diana",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Target_Spot"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 152
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Target Spot"
+      ]
+    },
+    "tomato_tomato_mosaic_virus": {
+      "index": 63,
+      "label": "tomato_tomato_mosaic_virus",
+      "name_es": "Tomate — virus del mosaico",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Tomato_mosaic_virus"
+        ]
+      },
+      "counts": {
+        "train": 115,
+        "val": 25,
+        "test": 25
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Tomato mosaic virus"
+      ]
+    },
+    "tomato_tomato_yellow_leaf_curl_virus": {
+      "index": 64,
+      "label": "tomato_tomato_yellow_leaf_curl_virus",
+      "name_es": "Tomate — virus del rizado amarillo",
+      "group": "plant_disease",
+      "sources": {
+        "plantvillage": [
+          "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+        ]
+      },
+      "counts": {
+        "train": 494,
+        "val": 106,
+        "test": 623
+      },
+      "species": [
+        "Tomato"
+      ],
+      "health_status": [
+        "Tomato Yellow Leaf Curl Virus"
+      ]
+    },
+    "trout": {
+      "index": 65,
+      "label": "trout",
+      "name_es": "Trucha",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "trout"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    },
+    "wolf": {
+      "index": 66,
+      "label": "wolf",
+      "name_es": "Lobo",
+      "group": "animal",
+      "sources": {
+        "cifar100": [
+          "wolf"
+        ]
+      },
+      "counts": {
+        "train": 425,
+        "val": 75,
+        "test": 100
+      }
+    }
+  },
+  "sources": {
+    "cifar100": {
+      "archivo": "dataset\\General\\cifar-100-python.tar.gz",
+      "detalle": "extraído a data/extracted/cifar100 (imágenes seleccionadas 32x32)",
+      "web": "https://www.cs.toronto.edu/~kriz/cifar.html",
+      "seleccionadas": [
+        "baby",
+        "bear",
+        "bee",
+        "beetle",
+        "boy",
+        "butterfly",
+        "caterpillar",
+        "cockroach",
+        "dinosaur",
+        "dolphin",
+        "forest",
+        "fox",
+        "girl",
+        "leopard",
+        "lion",
+        "man",
+        "mountain",
+        "mouse",
+        "plain",
+        "rabbit",
+        "sea",
+        "shark",
+        "squirrel",
+        "tiger",
+        "trout",
+        "wolf",
+        "woman"
+      ]
+    },
+    "intel": {
+      "archivo": "dataset\\Paisajes",
+      "detalle": "seg_train/seg_test con particiones oficiales; seg_pred sin etiquetas no se usa",
+      "web": "https://huggingface.co/datasets/sfarrukhm/intel-image-classification",
+      "seg_pred_excluidas": 7301
+    },
+    "plantvillage": {
+      "archivo": "dataset\\Plantas\\raw\\color",
+      "detalle": "raw/color con 38 clases; metadatos en dataset/Plantas/metadata",
+      "web": "https://www.tensorflow.org/datasets/catalog/plant_village"
+    },
+    "mosqvision": {
+      "archivo": "dataset\\Mosquito_dataset",
+      "detalle": "AEDES/ANOPHELES/CULEX con 1000 imágenes cada una",
+      "web": "https://zenodo.org/records/14238701"
+    }
+  }
+}

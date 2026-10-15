@@ -1,0 +1,216 @@
+{
+  "model": "C:\\Users\\nelso\\Desktop\\steven\\proyectos\\proyectoIdentificadorDeImagenes\\models\\omnivision_cnn.keras",
+  "num_classes": 67,
+  "test_images": 13261,
+  "val_images": 5806,
+  "accuracy": 0.8796,
+  "top5_accuracy": 0.9873,
+  "macro_f1": 0.8453,
+  "threshold": 0.47,
+  "test_coverage_at_threshold": 0.9768,
+  "test_precision_accepted": 0.8927,
+  "per_source_accuracy": {
+    "cifar100": 0.7647,
+    "intel": 0.87,
+    "mosqvision": 0.8474,
+    "plantvillage": 0.9276
+  },
+  "worst_10_classes": [
+    {
+      "class": "culex",
+      "support": 39,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "class": "shark",
+      "support": 100,
+      "precision": 0.5217,
+      "recall": 0.84,
+      "f1": 0.6437
+    },
+    {
+      "class": "dolphin",
+      "support": 100,
+      "precision": 0.8689,
+      "recall": 0.53,
+      "f1": 0.6584
+    },
+    {
+      "class": "wolf",
+      "support": 100,
+      "precision": 0.5329,
+      "recall": 0.89,
+      "f1": 0.6667
+    },
+    {
+      "class": "squirrel",
+      "support": 100,
+      "precision": 0.6635,
+      "recall": 0.69,
+      "f1": 0.6765
+    },
+    {
+      "class": "rabbit",
+      "support": 100,
+      "precision": 0.587,
+      "recall": 0.81,
+      "f1": 0.6807
+    },
+    {
+      "class": "mouse",
+      "support": 100,
+      "precision": 0.703,
+      "recall": 0.71,
+      "f1": 0.7065
+    },
+    {
+      "class": "bear",
+      "support": 100,
+      "precision": 0.7473,
+      "recall": 0.68,
+      "f1": 0.712
+    },
+    {
+      "class": "fox",
+      "support": 100,
+      "precision": 0.8101,
+      "recall": 0.64,
+      "f1": 0.7151
+    },
+    {
+      "class": "tomato_target_spot",
+      "support": 152,
+      "precision": 0.6845,
+      "recall": 0.7566,
+      "f1": 0.7188
+    }
+  ],
+  "best_10_classes": [
+    {
+      "class": "raspberry_healthy",
+      "support": 56,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "class": "strawberry_healthy",
+      "support": 68,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "class": "apple_black_rot",
+      "support": 93,
+      "precision": 1.0,
+      "recall": 0.9892,
+      "f1": 0.9946
+    },
+    {
+      "class": "orange_haunglongbing_citrus_greening",
+      "support": 826,
+      "precision": 0.9904,
+      "recall": 0.9952,
+      "f1": 0.9928
+    },
+    {
+      "class": "cherry_including_sour_powdery_mildew",
+      "support": 158,
+      "precision": 0.9936,
+      "recall": 0.981,
+      "f1": 0.9873
+    },
+    {
+      "class": "peach_bacterial_spot",
+      "support": 345,
+      "precision": 0.9912,
+      "recall": 0.9826,
+      "f1": 0.9869
+    },
+    {
+      "class": "corn_maize_common_rust",
+      "support": 179,
+      "precision": 0.9728,
+      "recall": 1.0,
+      "f1": 0.9862
+    },
+    {
+      "class": "blueberry_healthy",
+      "support": 225,
+      "precision": 0.9822,
+      "recall": 0.9822,
+      "f1": 0.9822
+    },
+    {
+      "class": "grape_leaf_blight_isariopsis_leaf_spot",
+      "support": 161,
+      "precision": 0.9814,
+      "recall": 0.9814,
+      "f1": 0.9814
+    },
+    {
+      "class": "squash_powdery_mildew",
+      "support": 275,
+      "precision": 0.9782,
+      "recall": 0.9782,
+      "f1": 0.9782
+    }
+  ],
+  "top_confusions": [
+    {
+      "true": "street",
+      "pred": "buildings",
+      "count": 130
+    },
+    {
+      "true": "mountain",
+      "pred": "glacier",
+      "count": 96
+    },
+    {
+      "true": "soybean_healthy",
+      "pred": "apple_healthy",
+      "count": 46
+    },
+    {
+      "true": "glacier",
+      "pred": "mountain",
+      "count": 43
+    },
+    {
+      "true": "tomato_tomato_yellow_leaf_curl_virus",
+      "pred": "tomato_spider_mites_two_spotted_spider_mite",
+      "count": 41
+    },
+    {
+      "true": "dolphin",
+      "pred": "shark",
+      "count": 38
+    },
+    {
+      "true": "culex",
+      "pred": "anopheles",
+      "count": 33
+    },
+    {
+      "true": "forest",
+      "pred": "corn_maize_healthy",
+      "count": 29
+    },
+    {
+      "true": "tomato_bacterial_spot",
+      "pred": "tomato_septoria_leaf_spot",
+      "count": 26
+    },
+    {
+      "true": "sea",
+      "pred": "plain",
+      "count": 25
+    }
+  ],
+  "evaluated_at": "2026-10-15 01:08:23",
+  "seconds": 52.4
+}
